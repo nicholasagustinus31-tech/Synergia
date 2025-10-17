@@ -3,20 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Synergia Media Publisher</title>
+    <title>Primaframe uPVC - Distributor &amp; Produsen Kusen Pintu Jendela</title>
     <meta
       name="description"
-      content="Company profile Synergia, media publisher dengan solusi konten end-to-end."
+      content="Primaframe uPVC adalah distributor material dan produsen kusen pintu serta jendela uPVC dengan solusi premium untuk proyek residensial maupun komersial."
     />
+    <meta
+      name="keywords"
+      content="distributor upvc, kusen pintu upvc, jendela upvc, swing door upvc, sliding door upvc, proyek upvc"
+    />
+    <meta property="og:title" content="Primaframe uPVC - Solusi Kusen Pintu &amp; Jendela" />
+    <meta
+      property="og:description"
+      content="Solusi lengkap material uPVC berkualitas untuk pintu dan jendela dengan layanan profesional dan garansi proyek."
+    />
+    <meta property="og:image" content="assets/creative.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <a href="#home" class="brand" aria-label="Synergia Media Publisher">
-          <span class="brand__logo" aria-hidden="true">S</span>
-          <span class="brand__text">Synergia</span>
+        <a href="#home" class="brand" aria-label="Primaframe uPVC">
+          <span class="brand__logo" aria-hidden="true">P</span>
+          <span class="brand__text">
+            <strong>Primaframe</strong>
+            <span>uPVC Systems</span>
+          </span>
         </a>
         <nav class="main-nav" aria-label="Navigasi utama">
           <button class="main-nav__toggle" aria-expanded="false" aria-controls="navigation-menu">
@@ -25,252 +44,453 @@
             <span></span>
             <span></span>
           </button>
-          <ul class="main-nav__list" id="navigation-menu" aria-expanded="false">
-            <li><a href="#home">Our Journey</a></li>
-            <li><a href="#people">People</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="#case-studies">Case Studies</a></li>
-            <li><a href="#contact">Hubungi Kami</a></li>
-          </ul>
+          <div class="main-nav__wrapper" id="navigation-menu" aria-expanded="false">
+            <ul class="main-nav__list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li class="has-dropdown">
+                <a href="#products">Products</a>
+                <ul class="dropdown" aria-label="Sub menu produk">
+                  <li><a href="#product-swing">Profile Swing Door In / Out</a></li>
+                  <li><a href="#product-sliding">Profile Sliding Door</a></li>
+                  <li><a href="#product-jungkit">Profile Jungkit</a></li>
+                  <li><a href="#product-lipat">Profile Lipat</a></li>
+                  <li><a href="#product-pivot">Profile Pivot</a></li>
+                </ul>
+              </li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Request Quotation</a>
+          </div>
         </nav>
-        <div class="cta-group">
-          <button class="btn btn--ghost" data-modal-target="modal-login">Masuk</button>
-          <a class="btn" href="#contact">Mulai Proyek</a>
-        </div>
       </div>
     </header>
 
     <main>
-      <section id="home" class="section hero">
-        <div class="container hero__content">
+      <section id="home" class="section hero" aria-labelledby="hero-title">
+        <div class="container hero__grid">
           <div class="hero__copy reveal">
-            <p class="eyebrow">Media Publisher Terintegrasi</p>
-            <h1>
-              Mendorong narasi brand yang relevan dan berdampak melalui platform digital
-              premium.
+            <p class="eyebrow">Distributor &amp; Fabricator uPVC</p>
+            <h1 id="hero-title">
+              Kusen uPVC premium dengan engineering presisi untuk performa maksimal dan garansi jangka panjang.
             </h1>
             <p>
-              Sejak 2012, Synergia menghubungkan brand dan audiens dengan storytelling berbasis data,
-              produksi konten lintas channel, dan distribusi terukur.
+              Kami menghadirkan sistem kusen pintu dan jendela uPVC yang tahan cuaca, kedap suara, dan efisien energi
+              untuk proyek residensial, komersial, maupun high-rise.
             </p>
             <div class="hero__actions">
-              <a class="btn" href="#case-studies">Lihat Case Studies</a>
-              <button class="btn btn--ghost" data-modal-target="modal-consult">Jadwalkan Konsultasi</button>
+              <a class="btn" href="#products">Lihat Produk</a>
+              <a class="btn btn--ghost" href="#projects">Portofolio Proyek</a>
             </div>
-            <dl class="metrics">
+            <dl class="metrics" aria-label="Statistik perusahaan">
               <div>
-                <dt>120+</dt>
-                <dd>Kampanye multimedia sukses</dd>
+                <dt data-counter="120">0</dt>
+                <dd>Proyek selesai</dd>
               </div>
               <div>
-                <dt>45M</dt>
-                <dd>Impresi audiens bulanan</dd>
+                <dt data-counter="15">0</dt>
+                <dd>Tahun pengalaman</dd>
               </div>
               <div>
-                <dt>35+</dt>
-                <dd>Partner media premium</dd>
+                <dt data-counter="25">0</dt>
+                <dd>Kota jangkauan layanan</dd>
               </div>
             </dl>
           </div>
-          <div class="hero__media reveal">
-            <div class="hero__globe" role="img" aria-label="Animasi jaringan media"></div>
+          <figure class="hero__visual reveal" aria-label="Render kusen uPVC modern">
+            <div class="hero__orb"></div>
+            <figcaption>Kualitas material terbaik dengan finishing rapi &amp; modern.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 id="about-title">Tentang Primaframe</h2>
+            <p>
+              Primaframe uPVC menyediakan solusi terintegrasi mulai dari distribusi material, engineering desain,
+              fabrikasi, hingga instalasi oleh tim bersertifikasi. Semua produk memenuhi standar SNI dan dilengkapi
+              dokumentasi teknis lengkap.
+            </p>
+          </div>
+          <div class="about__grid">
+            <article class="about__card reveal">
+              <h3>Visi &amp; Nilai</h3>
+              <p>
+                Menciptakan ruang hidup yang nyaman dan berkelanjutan melalui material uPVC yang hemat energi,
+                ramah lingkungan, dan estetis.
+              </p>
+              <ul>
+                <li>Teknologi profil uPVC Jerman</li>
+                <li>Hardware multi-point locking</li>
+                <li>Garansi struktur hingga 10 tahun</li>
+              </ul>
+            </article>
+            <article class="about__card reveal">
+              <h3>Standar Produksi</h3>
+              <p>
+                Pabrikasi dilakukan dengan mesin CNC dan quality control berlapis. Setiap unit diuji ketahanan air,
+                angin, dan kebocoran suara sebelum dikirim.
+              </p>
+              <ul>
+                <li>Sertifikasi ISO 9001:2015</li>
+                <li>Lead free &amp; UV resistant</li>
+                <li>Support BIM &amp; shop drawing</li>
+              </ul>
+            </article>
+            <article class="about__card reveal">
+              <h3>Layanan Profesional</h3>
+              <p>
+                Konsultan kami siap memberikan survei lokasi, perhitungan material, hingga simulasi desain untuk
+                memastikan hasil optimal dan tepat waktu.
+              </p>
+              <ul>
+                <li>Tim project management in-house</li>
+                <li>After-sales &amp; maintenance</li>
+                <li>Integrasi dengan smart home</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section journey" aria-labelledby="journey-title">
+      <section id="products" class="section products" aria-labelledby="products-title">
         <div class="container">
-          <h2 id="journey-title" class="section__title reveal">Our Journey</h2>
-          <div class="timeline">
-            <article class="timeline__item reveal">
-              <h3>2012 &mdash; Lahir sebagai publisher digital</h3>
-              <p>Memulai dengan tiga portal berita niche yang fokus pada komunitas kreatif Indonesia.</p>
+          <div class="section__header reveal">
+            <h2 id="products-title">Solusi Produk uPVC</h2>
+            <p>Pilih sistem kusen sesuai kebutuhan bukaan dan fungsi ruang Anda.</p>
+          </div>
+          <div class="product-tabs" role="tablist" aria-label="Kategori produk">
+            <button class="product-tab is-active" role="tab" aria-selected="true" data-target="product-swing">
+              Swing Door In / Out
+            </button>
+            <button class="product-tab" role="tab" aria-selected="false" data-target="product-sliding">
+              Sliding Door
+            </button>
+            <button class="product-tab" role="tab" aria-selected="false" data-target="product-jungkit">
+              Jungkit Window
+            </button>
+            <button class="product-tab" role="tab" aria-selected="false" data-target="product-lipat">
+              Folding Door
+            </button>
+            <button class="product-tab" role="tab" aria-selected="false" data-target="product-pivot">
+              Pivot Door
+            </button>
+          </div>
+          <div class="product-panels">
+            <article id="product-swing" class="product-panel is-active" role="tabpanel">
+              <div class="product-panel__content">
+                <div>
+                  <h3>Profile Swing Door In / Out</h3>
+                  <p>
+                    Sistem pintu ayun dengan profil multi-kamar untuk isolasi termal, gasket double seal, dan engsel
+                    heavy duty. Ideal untuk pintu utama dan area servis.
+                  </p>
+                  <ul>
+                    <li>Ketebalan profil 70mm, steel reinforcement 1.5mm</li>
+                    <li>Konfigurasi single / double leaf, bukaan in-swing &amp; out-swing</li>
+                    <li>Opsional kaca low-e &amp; laminated</li>
+                  </ul>
+                  <a class="btn" href="#contact">Minta Penawaran</a>
+                </div>
+                <div class="product-spec">
+                  <h4>Spesifikasi Teknis</h4>
+                  <dl>
+                    <div>
+                      <dt>U-Value</dt>
+                      <dd>1.3 W/m²K</dd>
+                    </div>
+                    <div>
+                      <dt>Water Tightness</dt>
+                      <dd>Class E750</dd>
+                    </div>
+                    <div>
+                      <dt>Acoustic</dt>
+                      <dd>35 dB</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
             </article>
-            <article class="timeline__item reveal">
-              <h3>2016 &mdash; Studio konten terintegrasi</h3>
-              <p>Membangun studio produksi untuk mendukung storytelling brand secara menyeluruh.</p>
+            <article id="product-sliding" class="product-panel" role="tabpanel" hidden>
+              <div class="product-panel__content">
+                <div>
+                  <h3>Profile Sliding Door</h3>
+                  <p>
+                    Pintu geser dengan sistem rail stainless, anti-jumping, dan panel kaca besar yang memaksimalkan
+                    pencahayaan natural.
+                  </p>
+                  <ul>
+                    <li>Konfigurasi 2-6 panel dengan opsi lift &amp; slide</li>
+                    <li>Drainase multi level untuk area outdoor</li>
+                    <li>Compatible dengan moskito net sliding</li>
+                  </ul>
+                  <a class="btn" href="#contact">Konsultasi Desain</a>
+                </div>
+                <div class="product-spec">
+                  <h4>Spesifikasi Teknis</h4>
+                  <dl>
+                    <div>
+                      <dt>U-Value</dt>
+                      <dd>1.6 W/m²K</dd>
+                    </div>
+                    <div>
+                      <dt>Panel Width</dt>
+                      <dd>hingga 1.6 m</dd>
+                    </div>
+                    <div>
+                      <dt>Air Permeability</dt>
+                      <dd>Class 4</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
             </article>
-            <article class="timeline__item reveal">
-              <h3>2019 &mdash; Data intelligence suite</h3>
-              <p>Meluncurkan platform data untuk mengoptimasi distribusi konten dan KPI kampanye.</p>
+            <article id="product-jungkit" class="product-panel" role="tabpanel" hidden>
+              <div class="product-panel__content">
+                <div>
+                  <h3>Profile Jungkit</h3>
+                  <p>
+                    Jendela jungkit dengan sistem friction stay &amp; restrictor untuk ventilasi maksimal tanpa kompromi
+                    keamanan.
+                  </p>
+                  <ul>
+                    <li>Bukaan 45° dengan pengunci multipoint</li>
+                    <li>Double glazing 22mm - 28mm</li>
+                    <li>Airflow control &amp; insect screen</li>
+                  </ul>
+                  <a class="btn" href="#contact">Ajukan Konsultasi</a>
+                </div>
+                <div class="product-spec">
+                  <h4>Spesifikasi Teknis</h4>
+                  <dl>
+                    <div>
+                      <dt>Sound Insulation</dt>
+                      <dd>32 dB</dd>
+                    </div>
+                    <div>
+                      <dt>Wind Load</dt>
+                      <dd>Class C4</dd>
+                    </div>
+                    <div>
+                      <dt>Accessories</dt>
+                      <dd>Child safety restrictor</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
             </article>
-            <article class="timeline__item reveal">
-              <h3>2023 &mdash; Ekosistem media premium</h3>
-              <p>Memperluas jaringan mitra publisher dan kanal audio-visual untuk jangkauan maksimal.</p>
+            <article id="product-lipat" class="product-panel" role="tabpanel" hidden>
+              <div class="product-panel__content">
+                <div>
+                  <h3>Profile Lipat</h3>
+                  <p>
+                    Folding door dengan track atas bawah yang kokoh dan gasket perimeter untuk transisi ruang indoor
+                    outdoor yang seamless.
+                  </p>
+                  <ul>
+                    <li>Konfigurasi 3-8 panel lipat</li>
+                    <li>Sistem pivot center stabil</li>
+                    <li>Hardware anti karat &amp; hidden hinge</li>
+                  </ul>
+                  <a class="btn" href="#contact">Rancang Bersama</a>
+                </div>
+                <div class="product-spec">
+                  <h4>Spesifikasi Teknis</h4>
+                  <dl>
+                    <div>
+                      <dt>Panel Height</dt>
+                      <dd>hingga 3.2 m</dd>
+                    </div>
+                    <div>
+                      <dt>Thermal Break</dt>
+                      <dd>EPS + steel reinforcement</dd>
+                    </div>
+                    <div>
+                      <dt>Warranty</dt>
+                      <dd>10 tahun struktur</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </article>
+            <article id="product-pivot" class="product-panel" role="tabpanel" hidden>
+              <div class="product-panel__content">
+                <div>
+                  <h3>Profile Pivot</h3>
+                  <p>
+                    Pintu pivot mewah dengan poros offset, ideal untuk fasad dan lobi bangunan komersial yang
+                    membutuhkan statement desain.
+                  </p>
+                  <ul>
+                    <li>Pivot hardware concealed</li>
+                    <li>Finishing tekstur kayu, matte, atau metalik</li>
+                    <li>Sistem akses smart lock</li>
+                  </ul>
+                  <a class="btn" href="#contact">Diskusikan Proyek</a>
+                </div>
+                <div class="product-spec">
+                  <h4>Spesifikasi Teknis</h4>
+                  <dl>
+                    <div>
+                      <dt>Panel Weight</dt>
+                      <dd>hingga 200 kg</dd>
+                    </div>
+                    <div>
+                      <dt>Fire Rating</dt>
+                      <dd>hingga 60 menit</dd>
+                    </div>
+                    <div>
+                      <dt>Finish Options</dt>
+                      <dd>12 varian warna</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="people" class="section people" aria-labelledby="people-title">
+      <section id="projects" class="section projects" aria-labelledby="projects-title">
         <div class="container">
-          <h2 id="people-title" class="section__title reveal">People</h2>
-          <p class="section__subtitle reveal">
-            Tim multidisiplin yang memadukan strategi, kreatif, teknologi, dan distribusi.
+          <div class="section__header reveal">
+            <h2 id="projects-title">Project Highlight</h2>
+            <p>Beberapa proyek yang telah mempercayakan Primaframe sebagai mitra fasad dan bukaan uPVC.</p>
+          </div>
+          <div class="project-filters" role="group" aria-label="Filter proyek">
+            <button class="filter-btn is-active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="residensial">Residensial</button>
+            <button class="filter-btn" data-filter="komersial">Komersial</button>
+            <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal" data-category="residensial">
+              <img src="assets/founder.jpg" alt="Rumah tinggal modern dengan kusen uPVC" />
+              <div>
+                <h3>Skyline Residence</h3>
+                <p>Instalasi swing &amp; sliding door dengan kaca low-e untuk hunian bertingkat di Jakarta.</p>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="komersial">
+              <img src="assets/cto.jpg" alt="Gedung perkantoran dengan pintu pivot uPVC" />
+              <div>
+                <h3>Orbit Tower</h3>
+                <p>Pintu pivot custom 3.5 meter dengan sistem smart lock dan finishing metalik.</p>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="hospitality">
+              <img src="assets/cso.jpg" alt="Villa resort dengan folding door uPVC" />
+              <div>
+                <h3>Azure Villa</h3>
+                <p>Folding door seamless untuk area lounge resort di Bali, anti korosi dan tahan lembab.</p>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="residensial">
+              <img src="assets/creative.jpg" alt="Cluster perumahan dengan jendela jungkit uPVC" />
+              <div>
+                <h3>Greenloop Cluster</h3>
+                <p>Sistem jungkit ventilasi silang untuk 120 unit rumah tapak ramah lingkungan.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" aria-label="Ajakan konsultasi">
+        <div class="container cta__content reveal">
+          <h2>Siap membawa standar baru untuk bukaan bangunan Anda?</h2>
+          <p>
+            Tim kami siap mendampingi dari tahap perencanaan hingga instalasi dengan jadwal terukur dan dukungan
+            teknis penuh.
           </p>
-          <div class="people__grid">
-            <article class="profile-card reveal">
-              <img src="assets/founder.jpg" alt="CEO Synergia" />
-              <div>
-                <h3>Natasha Widjaja</h3>
-                <p>CEO &amp; Co-Founder</p>
-              </div>
-            </article>
-            <article class="profile-card reveal">
-              <img src="assets/cto.jpg" alt="CTO Synergia" />
-              <div>
-                <h3>Reza Arjuna</h3>
-                <p>Chief Technology Officer</p>
-              </div>
-            </article>
-            <article class="profile-card reveal">
-              <img src="assets/cso.jpg" alt="Chief Strategy Officer" />
-              <div>
-                <h3>Dewi Rahmani</h3>
-                <p>Chief Strategy Officer</p>
-              </div>
-            </article>
-            <article class="profile-card reveal">
-              <img src="assets/creative.jpg" alt="Creative Director" />
-              <div>
-                <h3>Ivan Kusuma</h3>
-                <p>Executive Creative Director</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="media" class="section media" aria-labelledby="media-title">
-        <div class="container">
-          <h2 id="media-title" class="section__title reveal">Media</h2>
-          <p class="section__subtitle reveal">
-            Jaringan brand dan perusahaan yang mempercayakan distribusi konten pada kami.
-          </p>
-          <div class="logo-cloud">
-            <div class="logo-card reveal" aria-label="Astra Media">ASTRA</div>
-            <div class="logo-card reveal" aria-label="Nusantara Bank">NUSABANK</div>
-            <div class="logo-card reveal" aria-label="TelcoX">TELCOX</div>
-            <div class="logo-card reveal" aria-label="Orbit Airlines">ORBIT</div>
-            <div class="logo-card reveal" aria-label="Zenith Tech">ZENITH</div>
-            <div class="logo-card reveal" aria-label="Lumin Skincare">LUMIN</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="partners" class="section partners" aria-labelledby="partners-title">
-        <div class="container">
-          <h2 id="partners-title" class="section__title reveal">Partners</h2>
-          <div class="partner-grid">
-            <article class="partner-card reveal">
-              <h3>Production House</h3>
-              <p>Kolaborasi produksi audio-visual dengan studio bersertifikasi broadcast internasional.</p>
-            </article>
-            <article class="partner-card reveal">
-              <h3>Data &amp; Analytics</h3>
-              <p>Integrasi dashboard performance real-time bersama penyedia data pihak ketiga.</p>
-            </article>
-            <article class="partner-card reveal">
-              <h3>Ad Network</h3>
-              <p>Jaringan inventory programmatic yang memaksimalkan CPM dan brand safety.</p>
-            </article>
-            <article class="partner-card reveal">
-              <h3>Influencer Collective</h3>
-              <p>300+ creator lintas platform untuk distribusi organik dan paid amplification.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="case-studies" class="section cases" aria-labelledby="case-title">
-        <div class="container">
-          <h2 id="case-title" class="section__title reveal">Case Studies</h2>
-          <div class="cases__grid">
-            <article class="case-card reveal">
-              <h3>Revitalisasi Brand FMCG</h3>
-              <p>
-                Kampanye omnichannel dengan konten interaktif menghasilkan peningkatan brand lift
-                34% dan ROI 5x.
-              </p>
-              <a href="#" class="case-card__link">Pelajari selengkapnya</a>
-            </article>
-            <article class="case-card reveal">
-              <h3>Series Dokumenter Travel</h3>
-              <p>
-                Produksi 8 episode dan distribusi lintas platform menghasilkan 12 juta views organik
-                dalam 3 bulan.
-              </p>
-              <a href="#" class="case-card__link">Pelajari selengkapnya</a>
-            </article>
-            <article class="case-card reveal">
-              <h3>Peluncuran Aplikasi Finansial</h3>
-              <p>
-                Strategi konten edukatif dengan influencer keuangan meningkatkan akuisisi pengguna
-                baru sebesar 220%.
-              </p>
-              <a href="#" class="case-card__link">Pelajari selengkapnya</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section capabilities" aria-labelledby="capabilities-title">
-        <div class="container">
-          <h2 id="capabilities-title" class="section__title reveal">Solusi Terpadu Synergia</h2>
-          <div class="capabilities__grid">
-            <article class="capability-card reveal">
-              <h3>Strategi &amp; Insight</h3>
-              <p>Blueprint komunikasi berbasis riset pasar dan analitik audiens real-time.</p>
-            </article>
-            <article class="capability-card reveal">
-              <h3>Produksi Konten</h3>
-              <p>Studio in-house untuk video, audio, artikel, dan pengalaman interaktif.</p>
-            </article>
-            <article class="capability-card reveal">
-              <h3>Distribusi &amp; Amplifikasi</h3>
-              <p>Ekosistem publisher dan creator untuk menyebarkan cerita brand secara efektif.</p>
-            </article>
-            <article class="capability-card reveal">
-              <h3>Pengukuran &amp; Optimasi</h3>
-              <p>KPI dashboard, brand lift study, dan attribution modeling terintegrasi.</p>
-            </article>
-          </div>
+          <a class="btn" href="#contact">Jadwalkan Konsultasi</a>
         </div>
       </section>
 
       <section id="contact" class="section contact" aria-labelledby="contact-title">
         <div class="container contact__grid">
-          <div class="contact__copy reveal">
-            <h2 id="contact-title" class="section__title">Mari kolaborasi</h2>
+          <div class="contact__info reveal">
+            <h2 id="contact-title">Hubungi Kami</h2>
             <p>
-              Ceritakan tantangan komunikasi brand Anda dan tim kami akan menyiapkan sesi strategi
-              dalam 24 jam.
+              Sampaikan kebutuhan proyek Anda melalui formulir berikut atau hubungi langsung tim konsultan kami.
+              Kami akan merespon dalam 1x24 jam kerja.
             </p>
             <ul class="contact__list">
-              <li><strong>Email:</strong> hello@synergia.media</li>
-              <li><strong>Telepon:</strong> +62 21 555 1234</li>
-              <li><strong>Alamat:</strong> Jl. Jendral Sudirman No. 88, Jakarta</li>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:info@primaframe.co.id">info@primaframe.co.id</a>
+              </li>
+              <li>
+                <strong>Telepon</strong>
+                <a href="tel:+62215557788">+62 21 555 7788</a>
+              </li>
+              <li>
+                <strong>Alamat</strong>
+                Jl. Teknologi Industri No. 18, Jakarta Barat 11530
+              </li>
+              <li>
+                <strong>Jam Operasional</strong>
+                Senin - Sabtu, 08.00 - 17.00 WIB
+              </li>
             </ul>
+            <div class="contact__map" aria-label="Lokasi kantor">
+              <iframe
+                title="Lokasi kantor Primaframe"
+                src="https://maps.google.com/maps?q=Jakarta%20Barat&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
-          <form class="contact__form reveal" aria-label="Form konsultasi">
+          <form class="contact__form reveal" aria-label="Form kontak" novalidate>
+            <div class="form__row">
+              <label>
+                Nama Lengkap
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Perusahaan
+                <input type="text" name="company" autocomplete="organization" />
+              </label>
+            </div>
+            <div class="form__row">
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>
+                Nomor Telepon
+                <input type="tel" name="phone" autocomplete="tel" required />
+              </label>
+            </div>
             <label>
-              Nama Lengkap
-              <input type="text" name="name" placeholder="Nama Anda" required />
+              Jenis Produk
+              <select name="product" required>
+                <option value="">Pilih produk</option>
+                <option>Swing Door</option>
+                <option>Sliding Door</option>
+                <option>Jungkit Window</option>
+                <option>Folding Door</option>
+                <option>Pivot Door</option>
+              </select>
             </label>
             <label>
-              Email Bisnis
-              <input type="email" name="email" placeholder="you@company.com" required />
+              Pesan
+              <textarea name="message" rows="4" placeholder="Ceritakan kebutuhan proyek Anda" required></textarea>
             </label>
-            <label>
-              Perusahaan
-              <input type="text" name="company" placeholder="Nama perusahaan" required />
-            </label>
-            <label>
-              Tujuan Kampanye
-              <textarea name="goal" rows="4" placeholder="Ceritakan kebutuhan Anda"></textarea>
-            </label>
-            <button type="submit" class="btn">Kirim Brief</button>
+            <div class="captcha" role="group" aria-labelledby="captcha-label">
+              <span id="captcha-label">Verifikasi Keamanan</span>
+              <div class="captcha__control">
+                <output id="captcha-question" aria-live="polite">0 + 0 = ?</output>
+                <label class="sr-only" for="captcha-answer">Jawaban Captcha</label>
+                <input id="captcha-answer" type="number" inputmode="numeric" required />
+                <button type="button" class="btn btn--ghost captcha-refresh">Refresh</button>
+              </div>
+            </div>
+            <button type="submit" class="btn">Kirim Pesan</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -279,55 +499,42 @@
     <footer class="site-footer">
       <div class="container site-footer__content">
         <div>
-          <p class="brand__text">Synergia Media Publisher</p>
-          <p class="site-footer__copyright">&copy; <span id="year"></span> Synergia. Hak cipta dilindungi.</p>
+          <span class="brand__logo brand__logo--footer" aria-hidden="true">P</span>
+          <p>© <span id="year"></span> Primaframe uPVC. All rights reserved.</p>
         </div>
         <div class="site-footer__links">
-          <a href="#" aria-label="Kebijakan Privasi">Privasi</a>
-          <a href="#" aria-label="Syarat dan Ketentuan">S&amp;K</a>
-          <a href="#" aria-label="Pusat Bantuan">Bantuan</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms &amp; Conditions</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
     </footer>
 
-    <dialog id="modal-login" class="modal" aria-labelledby="modal-login-title">
-      <form method="dialog" class="modal__content">
-        <h2 id="modal-login-title">Masuk dengan SSO</h2>
-        <p>Pilih provider Single Sign-On untuk akses portal klien.</p>
-        <div class="sso-buttons">
-          <button type="button" class="sso-button" data-provider="google">Google Workspace</button>
-          <button type="button" class="sso-button" data-provider="microsoft">Microsoft Entra ID</button>
-          <button type="button" class="sso-button" data-provider="okta">Okta</button>
-        </div>
-        <menu class="modal__actions">
-          <button value="cancel" class="btn btn--ghost">Batal</button>
-        </menu>
-      </form>
-    </dialog>
-
-    <dialog id="modal-consult" class="modal" aria-labelledby="modal-consult-title">
-      <form method="dialog" class="modal__content">
-        <h2 id="modal-consult-title">Jadwalkan Konsultasi</h2>
-        <p>Pilih slot pertemuan dengan tim kami melalui portal klien.</p>
-        <label>
-          Email Bisnis
-          <input type="email" name="consult-email" required placeholder="you@company.com" />
-        </label>
-        <label>
-          Preferensi Waktu
-          <select name="time">
-            <option>Pagi (09.00 - 11.00)</option>
-            <option>Siang (13.00 - 15.00)</option>
-            <option>Sore (16.00 - 18.00)</option>
-          </select>
-        </label>
-        <menu class="modal__actions">
-          <button value="cancel" class="btn btn--ghost">Batal</button>
-          <button value="confirm" class="btn">Kirim</button>
-        </menu>
-      </form>
-    </dialog>
-
-    <script src="app.js" type="module"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Primaframe uPVC",
+        "url": "https://primaframe.co.id",
+        "logo": "https://primaframe.co.id/logo.png",
+        "description": "Distributor material dan produsen kusen pintu dan jendela uPVC.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Teknologi Industri No. 18",
+          "addressLocality": "Jakarta Barat",
+          "postalCode": "11530",
+          "addressCountry": "ID"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+62-21-555-7788",
+          "email": "info@primaframe.co.id"
+        },
+        "sameAs": ["https://www.instagram.com/primaframe", "https://www.linkedin.com/company/primaframe"]
+      }
+    </script>
+    <script src="app.js" defer></script>
   </body>
 </html>
