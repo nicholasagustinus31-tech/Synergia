@@ -1,113 +1,157 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Synergia Media Publisher</title>
-    <meta
-      name="description"
-      content="Company profile Synergia, media publisher dengan solusi konten end-to-end."
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Title dan Deskripsi -->
+  <title>Synergia Media Publisher | Solusi Konten End-to-End</title>
+  <meta
+    name="description"
+    content="Synergia Media Publisher menghadirkan solusi konten end-to-end — mulai dari strategi, produksi, hingga publikasi digital untuk meningkatkan brand awareness bisnis Anda."
+  />
+  <meta
+    name="keywords"
+    content="Synergia Media Publisher, media digital, konten kreatif, publisher Indonesia, branding, strategi konten, digital marketing"
+  />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.synergia.co.id/" />
+
+  <!-- Logo / Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/synergia-logo.svg" />
+  <link rel="apple-touch-icon" href="synergialogo.svg" />
+
+  <!-- Open Graph untuk Facebook/LinkedIn -->
+  <meta property="og:title" content="Synergia Media Publisher | Solusi Konten End-to-End" />
+  <meta
+    property="og:description"
+    content="Synergia membantu bisnis Anda membangun kehadiran digital dengan solusi media dan konten yang terintegrasi."
+  />
+  <meta property="og:image" content="https://www.synergia.co.id/synergialogo.svg" />
+  <meta property="og:url" content="https://www.synergia.co.id/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Synergia Media Publisher | Solusi Konten End-to-End" />
+  <meta
+    name="twitter:description"
+    content="Bangun kehadiran digital yang kuat bersama Synergia — solusi konten kreatif dan publikasi profesional."
+  />
+  <meta name="twitter:image" content="https://www.synergia.co.id/synergialogo.svg" />
+
+  <!-- Fonts dan Stylesheet -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
   <body>
     <header class="site-header">
       <div class="container">
-        <a href="#home" class="brand" aria-label="Synergia Media Publisher">
-          <span class="brand__logo" aria-hidden="true">S</span>
-          <span class="brand__text">Synergia</span>
-        </a>
-        <nav class="main-nav" aria-label="Navigasi utama">
-          <button class="main-nav__toggle" aria-expanded="false" aria-controls="navigation-menu">
-            <span class="sr-only">Buka navigasi</span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="main-nav__list" id="navigation-menu" aria-expanded="false">
-            <li><a href="#home">Our Journey</a></li>
-            <li><a href="#people">People</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="#case-studies">Case Studies</a></li>
-            <li><a href="#contact">Hubungi Kami</a></li>
-          </ul>
-        </nav>
-        <div class="cta-group">
-          <button class="btn btn--ghost" data-modal-target="modal-login">Masuk</button>
-          <a class="btn" href="#contact">Mulai Proyek</a>
-        </div>
-      </div>
-    </header>
+        <a href="#home" aria-label="Synergia Media Publisher">
+  <img
+    src="assets/synergia-logo.svg"
+    alt="Logo Synergia Media Publisher"
+    width="120"
+    height="120"
+    loading="lazy"
+  >
+</a>
 
-    <main>
-      <section id="home" class="section hero">
-        <div class="container hero__content">
-          <div class="hero__copy reveal">
-            <p class="eyebrow">Media Publisher Terintegrasi</p>
-            <h1>
-              Mendorong narasi brand yang relevan dan berdampak melalui platform digital
-              premium.
-            </h1>
-            <p>
-              Sejak 2012, Synergia menghubungkan brand dan audiens dengan storytelling berbasis data,
-              produksi konten lintas channel, dan distribusi terukur.
-            </p>
-            <div class="hero__actions">
-              <a class="btn" href="#case-studies">Lihat Case Studies</a>
-              <button class="btn btn--ghost" data-modal-target="modal-consult">Jadwalkan Konsultasi</button>
-            </div>
-            <dl class="metrics">
-              <div>
-                <dt>120+</dt>
-                <dd>Kampanye multimedia sukses</dd>
-              </div>
-              <div>
-                <dt>45M</dt>
-                <dd>Impresi audiens bulanan</dd>
-              </div>
-              <div>
-                <dt>35+</dt>
-                <dd>Partner media premium</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="hero__media reveal">
-            <div class="hero__globe" role="img" aria-label="Animasi jaringan media"></div>
-          </div>
+        <nav class="main-nav" aria-label="Main Navigation">
+  <button class="main-nav__toggle" aria-expanded="false" aria-controls="navigation-menu">
+    <span class="sr-only">Open navigation</span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="main-nav__list" id="navigation-menu" aria-expanded="false">
+    <li><a href="#home">Our Journey</a></li>
+    <li><a href="#people">People</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#others">Others</a></li>
+    <li><a href="#case-studies">Case Studies</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<div class="cta-group">
+  <a class="btn" href="#contact">Start a Project</a>
+</div>
+</div>
+</header>
+
+<main>
+  <section id="home" class="section hero">
+    <div class="container hero__content">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Integrated Media Publisher</p>
+        <h1>
+          Driving relevant and impactful brand narratives through premium digital platforms.
+        </h1>
+        <p>
+          Since our founding in 2024, we’ve been committed to bridging strategy and storytelling.  
+  Our journey reflects a constant evolution—combining insight, creativity, and technology  
+  to help brands communicate with clarity, consistency, and impact across every touchpoint.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#case-studies">View Case Studies</a>
+          <button class="btn btn--ghost" data-modal-target="modal-consult">Schedule a Consultation</button>
         </div>
-      </section>
+        <dl class="metrics">
+          <div>
+            <dt>120+</dt>
+            <dd>Successful multimedia campaigns</dd>
+          </div>
+          <div>
+            <dt>45M</dt>
+            <dd>Monthly audience impressions</dd>
+          </div>
+          <div>
+            <dt>35+</dt>
+            <dd>Premium media partners</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero__media reveal">
+        <div class="hero__globe" role="img" aria-label="Media network animation"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
 
       <section class="section journey" aria-labelledby="journey-title">
-        <div class="container">
-          <h2 id="journey-title" class="section__title reveal">Our Journey</h2>
-          <div class="timeline">
-            <article class="timeline__item reveal">
-              <h3>2012 &mdash; Lahir sebagai publisher digital</h3>
-              <p>Memulai dengan tiga portal berita niche yang fokus pada komunitas kreatif Indonesia.</p>
-            </article>
-            <article class="timeline__item reveal">
-              <h3>2016 &mdash; Studio konten terintegrasi</h3>
-              <p>Membangun studio produksi untuk mendukung storytelling brand secara menyeluruh.</p>
-            </article>
-            <article class="timeline__item reveal">
-              <h3>2019 &mdash; Data intelligence suite</h3>
-              <p>Meluncurkan platform data untuk mengoptimasi distribusi konten dan KPI kampanye.</p>
-            </article>
-            <article class="timeline__item reveal">
-              <h3>2023 &mdash; Ekosistem media premium</h3>
-              <p>Memperluas jaringan mitra publisher dan kanal audio-visual untuk jangkauan maksimal.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <h2 id="journey-title" class="section__title reveal">Our Journey</h2>
+
+    <p class="journey__intro reveal">
+      Founded in 2024, we develop and execute integrated communication strategies to strengthen brand positioning, build trust, and support business goals.
+      This includes crafting key messages, managing media and stakeholder relations, driving impactful campaigns, and safeguarding the company’s reputation.
+    </p>
+
+    <!-- Partners (1 baris) -->
+    <div class="partners" aria-label="Supporting partners">
+      <ul class="partners__row">
+        <li class="partners__item"><img src="assets/logo1.svg" alt="Partner 1" loading="lazy" decoding="async"></li>
+        <li class="partners__item"><img src="assets/republikorp.png" alt="Partner 2" loading="lazy" decoding="async"></li>
+        <li class="partners__item"><img src="assets/jamescook.webp" alt="Partner 3" loading="lazy" decoding="async"></li>
+        <li class="partners__item"><img src="assets/saslogo.svg" alt="Partner 4" loading="lazy" decoding="async"></li>
+        <li class="partners__item"><img src="assets/Deakin-University-Indonesia.jpg" alt="Partner 5" loading="lazy" decoding="async"></li>
+        <li class="partners__item"><img src="assets/mpalogo.svg" alt="Partner 6" loading="lazy" decoding="async"></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
       <section id="people" class="section people" aria-labelledby="people-title">
         <div class="container">
           <h2 id="people-title" class="section__title reveal">People</h2>
           <p class="section__subtitle reveal">
-            Tim multidisiplin yang memadukan strategi, kreatif, teknologi, dan distribusi.
+            At Synergia, our team bridges messages and media to create conversations that move people.
           </p>
           <div class="people__grid">
             <article class="profile-card reveal">
@@ -143,167 +187,231 @@
       </section>
 
       <section id="media" class="section media" aria-labelledby="media-title">
-        <div class="container">
-          <h2 id="media-title" class="section__title reveal">Media</h2>
-          <p class="section__subtitle reveal">
-            Jaringan brand dan perusahaan yang mempercayakan distribusi konten pada kami.
-          </p>
-          <div class="logo-cloud">
-            <div class="logo-card reveal" aria-label="Astra Media">ASTRA</div>
-            <div class="logo-card reveal" aria-label="Nusantara Bank">NUSABANK</div>
-            <div class="logo-card reveal" aria-label="TelcoX">TELCOX</div>
-            <div class="logo-card reveal" aria-label="Orbit Airlines">ORBIT</div>
-            <div class="logo-card reveal" aria-label="Zenith Tech">ZENITH</div>
-            <div class="logo-card reveal" aria-label="Lumin Skincare">LUMIN</div>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <h2 id="media-title" class="section__title reveal">Media</h2>
+    <p class="section__subtitle reveal">
+      Synergia maintains strong connections with leading national and local media, ensuring strategic visibility and trusted communication across Indonesia.
+    </p>
 
-      <section id="partners" class="section partners" aria-labelledby="partners-title">
-        <div class="container">
-          <h2 id="partners-title" class="section__title reveal">Partners</h2>
-          <div class="partner-grid">
-            <article class="partner-card reveal">
-              <h3>Production House</h3>
-              <p>Kolaborasi produksi audio-visual dengan studio bersertifikasi broadcast internasional.</p>
-            </article>
-            <article class="partner-card reveal">
-              <h3>Data &amp; Analytics</h3>
-              <p>Integrasi dashboard performance real-time bersama penyedia data pihak ketiga.</p>
-            </article>
-            <article class="partner-card reveal">
-              <h3>Ad Network</h3>
-              <p>Jaringan inventory programmatic yang memaksimalkan CPM dan brand safety.</p>
-            </article>
-            <article class="partner-card reveal">
-              <h3>Influencer Collective</h3>
-              <p>300+ creator lintas platform untuk distribusi organik dan paid amplification.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+    <!-- SLIDER -->
+    <div class="logo-slider" aria-label="Media logo marquee">
+      <ul class="logo-track">
+        <li class="logo-item"><img src="assets/kompas.png" alt="Kompas Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/detik.png" alt="Detik Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/The_Jakarta_Post_logo_2016.svg.png" alt="The Jakarta Post Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/Media_Indonesia.png" alt="Media Indonesia Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/liputan 6.webp" alt="Liputan 6 Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/IDN_Logo.png" alt="IDN Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/tempo.png" alt="Tempo Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/cnn-indonesia-logo-png_seeklogo-520453.png" alt="CNN Indonesia Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/tribunnews.png" alt="Tribunnews Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/Jawa_Pos.png" alt="Jawa Pos Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/bisnis-indonesia.png" alt="Bisnis Indonesia Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/kumparan.png" alt="Kumparan Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/investor.id.webp" alt="Investor.id Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/CNBC_Indonesia_logo.svg.png" alt="CNBC Indonesia Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/republika.png" alt="Republika Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/katadatalogo.webp" alt="Katadata Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/merdeka.png" alt="Merdeka Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/INews.png" alt="iNews Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/Logo-sindonews.png" alt="Sindonews Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/Viva.co.id_(2018).svg.png" alt="Viva.co.id Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/investortrustlogo.svg" alt="Investor Trust Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/rakyatmerdeka.png" alt="Rakyat Merdeka Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/suara.png" alt="Suara.com Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/KOMPAS_TV_(2017).svg.png" alt="Kompas TV Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/TvOne_2023.svg" alt="tvOne Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/metrotv.png" alt="Metro TV Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/BTV_(Indonesia)_logo.svg.png" alt="BTV Logo" loading="lazy" decoding="async" /></li>
+        <li class="logo-item"><img src="assets/logo-tvonenews.svg" alt="tvOne Logo" loading="lazy" decoding="async" /></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".logo-track");
+  if (!track) return;
+
+  // Gandakan 1x (tepat dua set) untuk loop mulus
+  track.innerHTML += track.innerHTML;
+
+  // (Opsional) jika ingin kecepatan konsisten di berbagai layar,
+  // kamu bisa set durasi berdasar lebar konten:
+  // const baseSpeed = 12000; // ms per 1000px (silakan sesuaikan)
+  // const trackWidth = track.scrollWidth / 2; // lebar satu set
+  // const ms = Math.max(10000, (trackWidth / 1000) * baseSpeed);
+  // track.style.setProperty("--duration", `${ms}ms`);
+});
+</script>
+
+
+
+
+
+      <section id="others" class="section partner" aria-labelledby="partner-title">
+  <div class="container">
+    <h2 id="partner-title" class="section__title reveal">Others</h2>
+
+    <p class="partner__lede reveal">
+      We believe that collaboration drives excellence. Through strong partnerships, Synergia elevates its services to a global level, ensuring every campaign meets global standards of quality and impact.
+    </p>
+
+    <div class="cision__logo reveal">
+      <a href="https://www.cision.com/" target="_blank" rel="noopener" aria-label="Partner Company">
+        <img
+          src="assets/cisionlogo.png"
+          alt="Partner Company Logo"
+          width="200"
+          height="auto"
+          loading="lazy"
+        >
+      </a>
+    </div>
+  </div>
+</section>
+
 
       <section id="case-studies" class="section cases" aria-labelledby="case-title">
-        <div class="container">
-          <h2 id="case-title" class="section__title reveal">Case Studies</h2>
-          <div class="cases__grid">
-            <article class="case-card reveal">
-              <h3>Revitalisasi Brand FMCG</h3>
-              <p>
-                Kampanye omnichannel dengan konten interaktif menghasilkan peningkatan brand lift
-                34% dan ROI 5x.
-              </p>
-              <a href="#" class="case-card__link">Pelajari selengkapnya</a>
-            </article>
-            <article class="case-card reveal">
-              <h3>Series Dokumenter Travel</h3>
-              <p>
-                Produksi 8 episode dan distribusi lintas platform menghasilkan 12 juta views organik
-                dalam 3 bulan.
-              </p>
-              <a href="#" class="case-card__link">Pelajari selengkapnya</a>
-            </article>
-            <article class="case-card reveal">
-              <h3>Peluncuran Aplikasi Finansial</h3>
-              <p>
-                Strategi konten edukatif dengan influencer keuangan meningkatkan akuisisi pengguna
-                baru sebesar 220%.
-              </p>
-              <a href="#" class="case-card__link">Pelajari selengkapnya</a>
-            </article>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <h2 id="case-title" class="section__title reveal">Case Studies</h2>
+    <div class="cases__grid">
 
-      <section class="section capabilities" aria-labelledby="capabilities-title">
-        <div class="container">
-          <h2 id="capabilities-title" class="section__title reveal">Solusi Terpadu Synergia</h2>
-          <div class="capabilities__grid">
-            <article class="capability-card reveal">
-              <h3>Strategi &amp; Insight</h3>
-              <p>Blueprint komunikasi berbasis riset pasar dan analitik audiens real-time.</p>
-            </article>
-            <article class="capability-card reveal">
-              <h3>Produksi Konten</h3>
-              <p>Studio in-house untuk video, audio, artikel, dan pengalaman interaktif.</p>
-            </article>
-            <article class="capability-card reveal">
-              <h3>Distribusi &amp; Amplifikasi</h3>
-              <p>Ekosistem publisher dan creator untuk menyebarkan cerita brand secara efektif.</p>
-            </article>
-            <article class="capability-card reveal">
-              <h3>Pengukuran &amp; Optimasi</h3>
-              <p>KPI dashboard, brand lift study, dan attribution modeling terintegrasi.</p>
-            </article>
-          </div>
+      <!-- Case 1: Video YouTube -->
+      <article class="case-card reveal">
+        <div class="case-card__media">
+          <iframe 
+            width="100%" 
+            height="250" 
+            src="https://www.youtube.com/embed/rQ0OSPSfu-4" 
+            title="Strategi Kementerian Investasi untuk Mencapai Target Pertumbuhan Ekonomi 8 Persen" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </div>
-      </section>
+        <div class="case-card__content">
+          <h3>Strategi Kementerian Investasi untuk Mencapai Target Pertumbuhan Ekonomi 8 Persen</h3>
+          <p>
+            Dalam kolaborasi bersama <strong>Kementerian Investasi dan Hilirisasi/BKPM</strong>, kampanye strategis ini menyoroti upaya pemerintah dalam mendorong investasi berkelanjutan guna mencapai target pertumbuhan ekonomi nasional sebesar 8 persen, dengan dukungan distribusi konten melalui <strong>Kompas.com</strong> sebagai media utama untuk memperkuat pesan publik dan daya tarik investor domestik maupun global.
+          </p>
+          <a href="https://youtube.com/shorts/rQ0OSPSfu-4?si=-bJu0uSkT16C5oB9" target="_blank" class="case-card__link">
+            Tonton di YouTube
+          </a>
+        </div>
+      </article>
+
+      <!-- Case 2: Artikel dengan Gambar -->
+      <article class="case-card reveal">
+        <div class="case-card__media">
+          <img 
+            src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/720x0/webp/photo/2025/02/26/1445382483.jpg" 
+            alt="Inovasi Pendidikan di Indonesia - Deakin Lancaster" 
+            width="100%" 
+            height="250" 
+            style="object-fit: cover; border-radius: 8px;">
+        </div>
+        <div class="case-card__content">
+          <h3>Inovasi Pendidikan di Indonesia: Kampus Kolaborasi Inggris–Australia Pertama secara Resmi Dibuka di Bandung</h3>
+          <p>
+            Inisiatif kolaboratif antara <strong>Deakin University</strong> dan <strong>Lancaster University</strong> yang diangkat oleh <strong>Pikiran Rakyat Jabar</strong> ini menandai babak baru dalam transformasi pendidikan tinggi di Indonesia, menghadirkan model kampus internasional terpadu pertama di Bandung yang berfokus pada pengembangan riset, inovasi, dan peningkatan daya saing global bagi mahasiswa Indonesia.
+          </p>
+          <a href="https://jabar.pikiran-rakyat.com/pendidikan/pr-3659101472/inovasi-pendidikan-di-indonesia-kampus-kolaborasi-inggris-australia-pertama-secara-resmi-dibuka-di-bandung?page=all" target="_blank" class="case-card__link">
+            Baca Artikel Lengkap
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 
       <section id="contact" class="section contact" aria-labelledby="contact-title">
-        <div class="container contact__grid">
-          <div class="contact__copy reveal">
-            <h2 id="contact-title" class="section__title">Mari kolaborasi</h2>
-            <p>
-              Ceritakan tantangan komunikasi brand Anda dan tim kami akan menyiapkan sesi strategi
-              dalam 24 jam.
-            </p>
-            <ul class="contact__list">
-              <li><strong>Email:</strong> hello@synergia.media</li>
-              <li><strong>Telepon:</strong> +62 21 555 1234</li>
-              <li><strong>Alamat:</strong> Jl. Jendral Sudirman No. 88, Jakarta</li>
-            </ul>
-          </div>
-          <form class="contact__form reveal" aria-label="Form konsultasi">
-            <label>
-              Nama Lengkap
-              <input type="text" name="name" placeholder="Nama Anda" required />
-            </label>
-            <label>
-              Email Bisnis
-              <input type="email" name="email" placeholder="you@company.com" required />
-            </label>
-            <label>
-              Perusahaan
-              <input type="text" name="company" placeholder="Nama perusahaan" required />
-            </label>
-            <label>
-              Tujuan Kampanye
-              <textarea name="goal" rows="4" placeholder="Ceritakan kebutuhan Anda"></textarea>
-            </label>
-            <button type="submit" class="btn">Kirim Brief</button>
-          </form>
-        </div>
-      </section>
+  <div class="container contact__grid">
+    <div class="contact__copy reveal">
+      <h2 id="contact-title" class="section__title">Let’s Collaborate</h2>
+      <p>
+        Tell us about your brand’s communication challenges, and our team will prepare a tailored
+        strategy session within 24 hours.
+      </p>
+      <ul class="contact__list">
+  <li><strong>Our Office:</strong></li>
+  <li>Citylofts Sudirman #2507</li>
+  <li>Jl. KH. Mas Mansyur No. 121 – Jakarta, 10220</li>
+  <li><strong>Telephone:</strong> (+62) 21 – 2970 4008</li>
+  <li><strong>Fax:</strong> (+62) 21 – 2970 4007</li>
+  <li><strong>Email:</strong> <a href="mailto:contact@mediaman.co.id">contact@mediaman.co.id</a></li>
+</ul>
+
+    </div>
+
+    <form class="contact__form reveal" aria-label="Consultation Form">
+      <label>
+        Full Name
+        <input type="text" name="name" placeholder="Your Name" required />
+      </label>
+      <label>
+        Business Email
+        <input type="email" name="email" placeholder="you@company.com" required />
+      </label>
+      <label>
+        Company
+        <input type="text" name="company" placeholder="Company Name" required />
+      </label>
+      <label>
+        Campaign Objective
+        <textarea name="goal" rows="4" placeholder="Tell us what you need"></textarea>
+      </label>
+      <button type="submit" class="btn">Send Brief</button>
+    </form>
+  </div>
+</section>
+
     </main>
 
     <footer class="site-footer">
-      <div class="container site-footer__content">
-        <div>
-          <p class="brand__text">Synergia Media Publisher</p>
-          <p class="site-footer__copyright">&copy; <span id="year"></span> Synergia. Hak cipta dilindungi.</p>
-        </div>
-        <div class="site-footer__links">
-          <a href="#" aria-label="Kebijakan Privasi">Privasi</a>
-          <a href="#" aria-label="Syarat dan Ketentuan">S&amp;K</a>
-          <a href="#" aria-label="Pusat Bantuan">Bantuan</a>
-        </div>
-      </div>
-    </footer>
+  <div class="container site-footer__content">
+    <div class="footer-left">
+      <p class="brand__text">Synergia Media Publisher</p>
+      <p class="site-footer__copyright">
+        &copy; <span id="year"></span> Synergia. All rights reserved.
+      </p>
+    </div>
 
-    <dialog id="modal-login" class="modal" aria-labelledby="modal-login-title">
-      <form method="dialog" class="modal__content">
-        <h2 id="modal-login-title">Masuk dengan SSO</h2>
-        <p>Pilih provider Single Sign-On untuk akses portal klien.</p>
-        <div class="sso-buttons">
-          <button type="button" class="sso-button" data-provider="google">Google Workspace</button>
-          <button type="button" class="sso-button" data-provider="microsoft">Microsoft Entra ID</button>
-          <button type="button" class="sso-button" data-provider="okta">Okta</button>
-        </div>
-        <menu class="modal__actions">
-          <button value="cancel" class="btn btn--ghost">Batal</button>
-        </menu>
-      </form>
-    </dialog>
+    <div class="footer-right">
+      <nav class="site-footer__links" aria-label="Footer links">
+        <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+        <a href="#" aria-label="Terms and Conditions">Terms &amp; Conditions</a>
+        <a href="#" aria-label="Help Center">Help Center</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/synergia" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 
+            16 1.146v13.708c0 .633-.526 1.146-1.175 
+            1.146H1.175C.526 16 0 15.487 0 
+            14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 
+            0 1.358-.554 1.358-1.248-.015-.709-.521-1.248-1.342-1.248-.821 
+            0-1.358.54-1.358 1.248 0 .694.52 1.248 1.326 1.248h.016zm4.908 
+            8.212V9.359c0-.203.015-.406.074-.552.163-.406.534-.827 
+            1.158-.827.817 0 1.144.623 1.144 1.535v3.879h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 
+            0-1.845.7-2.165 1.188v.027h-.016a5.54 
+            5.54 0 0 1 .016-.027V6.169h-2.4c.03.677 
+            0 7.225 0 7.225h2.4z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
     <dialog id="modal-consult" class="modal" aria-labelledby="modal-consult-title">
       <form method="dialog" class="modal__content">
