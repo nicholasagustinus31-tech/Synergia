@@ -72,7 +72,6 @@
     <li><a href="#media">Media</a></li>
     <li><a href="#others">Others</a></li>
     <li><a href="#case-studies">Case Studies</a></li>
-    <li><a href="#contact">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -97,22 +96,9 @@
         </p>
         <div class="hero__actions">
           <a class="btn" href="#case-studies">View Case Studies</a>
-          <button class="btn btn--ghost" data-modal-target="modal-consult">Schedule a Consultation</button>
+          <button class="btn btn--ghost" data-modal-target="modal-consult">Schedule an Appoinment</button>
         </div>
-        <dl class="metrics">
-          <div>
-            <dt>120+</dt>
-            <dd>Successful multimedia campaigns</dd>
-          </div>
-          <div>
-            <dt>45M</dt>
-            <dd>Monthly audience impressions</dd>
-          </div>
-          <div>
-            <dt>35+</dt>
-            <dd>Premium media partners</dd>
-          </div>
-        </dl>
+        
       </div>
 
       <div class="hero__media reveal">
@@ -148,43 +134,89 @@
 
 
       <section id="people" class="section people" aria-labelledby="people-title">
-        <div class="container">
-          <h2 id="people-title" class="section__title reveal">People</h2>
-          <p class="section__subtitle reveal">
-            At Synergia, our team bridges messages and media to create conversations that move people.
-          </p>
-          <div class="people__grid">
-            <article class="profile-card reveal">
-              <img src="assets/founder.jpg" alt="CEO Synergia" />
-              <div>
-                <h3>Natasha Widjaja</h3>
-                <p>CEO &amp; Co-Founder</p>
-              </div>
-            </article>
-            <article class="profile-card reveal">
-              <img src="assets/cto.jpg" alt="CTO Synergia" />
-              <div>
-                <h3>Reza Arjuna</h3>
-                <p>Chief Technology Officer</p>
-              </div>
-            </article>
-            <article class="profile-card reveal">
-              <img src="assets/cso.jpg" alt="Chief Strategy Officer" />
-              <div>
-                <h3>Dewi Rahmani</h3>
-                <p>Chief Strategy Officer</p>
-              </div>
-            </article>
-            <article class="profile-card reveal">
-              <img src="assets/creative.jpg" alt="Creative Director" />
-              <div>
-                <h3>Ivan Kusuma</h3>
-                <p>Executive Creative Director</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <h2 id="people-title" class="section__title reveal">People</h2>
+    <p class="section__subtitle reveal">
+      At Synergia, our team bridges messages and media to create conversations that move people.
+    </p>
+
+    <div class="team-photo-container reveal" aria-label="Synergia Team">
+      <!-- PAKAI FOTO LANDSCAPE -->
+      <img src="assets/people.svg" alt="Synergia Team" class="team-photo" />
+
+      <!-- Hotspot 1: Natasha -->
+      <button class="person" style="left: 37%; top: 60%;" aria-label="Natasha Widjaja, CEO & Co-Founder">
+        <span class="tooltip">
+          <strong>Natasha Widjaja</strong><br />
+          CEO &amp; Co-Founder
+        </span>
+      </button>
+
+      <!-- Hotspot 2: Reza -->
+      <button class="person" style="left: 60%; top: 60%;" aria-label="Reza Arjuna, Chief Technology Officer">
+        <span class="tooltip">
+          <strong>Reza Arjuna</strong><br />
+          Chief Technology Officer
+        </span>
+      </button>
+
+      <!-- Hotspot 3: Dewi -->
+      <button class="person" style="left: 70%; top: 25%;" aria-label="Dewi Rahmani, Chief Strategy Officer">
+        <span class="tooltip">
+          <strong>Dewi Rahmani</strong><br />
+          Chief Strategy Officer
+        </span>
+      </button>
+
+      <!-- Hotspot 4: Ivan -->
+      <button class="person" style="left: 53%; top: 25%;" aria-label="Ivan Kusuma, Executive Creative Director">
+        <span class="tooltip">
+          <strong>Ivan Kusuma</strong><br />
+          Executive Creative Director
+        </span>
+      </button>
+      <button class="person" style="left: 37%; top: 25%;" aria-label="Ivan Kusuma, Executive Creative Director">
+        <span class="tooltip">
+          <strong>Ivan Kusuma</strong><br />
+          Executive Creative Director
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Toggle tooltip saat tap di layar sentuh, dan tutup saat tap di luar
+  (function () {
+    const persons = Array.from(document.querySelectorAll('.team-photo-container .person'));
+
+    // Tutup semua
+    function closeAll() {
+      persons.forEach(p => p.classList.remove('is-open'));
+    }
+
+    // Klik/tap pada hotspot -> toggle
+    persons.forEach(p => {
+      p.addEventListener('click', (e) => {
+        // Hindari double: klik yang sama hanya toggle dirinya
+        const isOpen = p.classList.contains('is-open');
+        closeAll();
+        if (!isOpen) p.classList.add('is-open');
+        e.stopPropagation();
+      });
+    });
+
+    // Klik di luar -> tutup
+    document.addEventListener('click', closeAll);
+
+    // Aksesibilitas: ESC untuk tutup
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAll();
+    });
+  })();
+</script>
+
+
 
       <section id="media" class="section media" aria-labelledby="media-title">
   <div class="container">
@@ -324,48 +356,6 @@ document.addEventListener("DOMContentLoaded", () => {
       </article>
 
     </div>
-  </div>
-</section>
-
-
-      <section id="contact" class="section contact" aria-labelledby="contact-title">
-  <div class="container contact__grid">
-    <div class="contact__copy reveal">
-      <h2 id="contact-title" class="section__title">Let’s Collaborate</h2>
-      <p>
-        Tell us about your brand’s communication challenges, and our team will prepare a tailored
-        strategy session within 24 hours.
-      </p>
-      <ul class="contact__list">
-  <li><strong>Our Office:</strong></li>
-  <li>Citylofts Sudirman #2507</li>
-  <li>Jl. KH. Mas Mansyur No. 121 – Jakarta, 10220</li>
-  <li><strong>Telephone:</strong> (+62) 21 – 2970 4008</li>
-  <li><strong>Fax:</strong> (+62) 21 – 2970 4007</li>
-  <li><strong>Email:</strong> <a href="mailto:contact@mediaman.co.id">contact@mediaman.co.id</a></li>
-</ul>
-
-    </div>
-
-    <form class="contact__form reveal" aria-label="Consultation Form">
-      <label>
-        Full Name
-        <input type="text" name="name" placeholder="Your Name" required />
-      </label>
-      <label>
-        Business Email
-        <input type="email" name="email" placeholder="you@company.com" required />
-      </label>
-      <label>
-        Company
-        <input type="text" name="company" placeholder="Company Name" required />
-      </label>
-      <label>
-        Campaign Objective
-        <textarea name="goal" rows="4" placeholder="Tell us what you need"></textarea>
-      </label>
-      <button type="submit" class="btn">Send Brief</button>
-    </form>
   </div>
 </section>
 
