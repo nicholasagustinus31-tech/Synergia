@@ -78,8 +78,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 0;
-  gap: 1.5rem;
+  padding: 0rem 0;
+  gap: 0rem;
 }
 
 .brand {
