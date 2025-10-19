@@ -60,3 +60,63 @@ ssoButtons.forEach((button) => {
     alert(message);
   });
 });
+
+// --- Mobile Menu Controller ---
+(function () {
+  const nav = document.querySelector('.main-nav');
+  const toggle = document.querySelector('.main-nav__toggle');
+  const panel = document.getElementById('navigation-menu');
+
+  if (!nav || !toggle || !panel) return;
+
+  // Backdrop (buat jika belum ada)
+  let backdrop = document.querySelector('.main-nav__backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'main-nav__backdrop';
+    // taruh setelah header agar menutupi konten
+    document.body.appendChild(backdrop);
+  }
+
+  // util
+  const openMenu = () => {
+    nav.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    panel.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('body-lock');
+    backdrop.removeAttribute('hidden');
+    // fokus ke item pertama untuk aksesibilitas
+    const firstLink = panel.querySelector('a');
+    firstLink && firstLink.focus({ preventScroll: true });
+  };
+
+  const closeMenu = () => {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    panel.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('body-lock');
+    backdrop.setAttribute('hidden', '');
+    toggle.focus({ preventScroll: true });
+  };
+
+  const isOpen = () => nav.classList.contains('is-open');
+
+  // Toggle
+  toggle.addEventListener('click', () => (isOpen() ? closeMenu() : openMenu()));
+
+  // Klik backdrop / link -> tutup
+  backdrop.addEventListener('click', closeMenu);
+  panel.addEventListener('click', (e) => {
+    if (e.target.matches('a')) closeMenu();
+  });
+
+  // Esc untuk tutup
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen()) closeMenu();
+  });
+
+  // Tutup saat resize ke desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768 && isOpen()) closeMenu();
+  });
+})();

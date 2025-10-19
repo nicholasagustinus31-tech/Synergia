@@ -684,24 +684,33 @@ img {
   }
 
   .main-nav__list {
-    position: absolute;
-    top: calc(100% + 0.75rem);
-    right: 0;
+    position: absolute; /* Kembali ke absolute */
+    top: 100%;          /* Posisi tepat di bawah header */
+    right: 1rem;        /* Jarak dari kanan */
+    width: 250px;       /* Lebar menu yang lebih kecil */
     background: white;
-    border-radius: 1rem;
-    padding: 1.5rem;
+    border-radius: 12px;
+    padding: 1.5rem;    /* Padding yang lebih kecil */
     flex-direction: column;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+    gap: 1rem;          /* Gap antar menu yang lebih kecil */
+    font-size: 1.125rem;/* Ukuran font yang lebih kecil */
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 100;
   }
 
   .main-nav__list[aria-expanded="true"] {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+  }
+
+  /* Sembunyikan tombol Start a Project di mobile */
+  .cta-group .btn {
+    display: none;
   }
 }
 
